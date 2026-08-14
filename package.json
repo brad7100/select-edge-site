@@ -2,6 +2,6 @@
   "name": "selectedge",
   "private": true,
   "scripts": {
-    "build": "echo Static site, no build required."
+    "build": "mkdir -p dist && cp index.html styles.css main.js dist/ && cp -r assets dist/"
   }
 }

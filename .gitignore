@@ -1,4 +1,4 @@
-﻿# Google Web Designer leftovers
+# Google Web Designer leftovers
 Select Edge.html
 Select Edge_groups_archive
 gwd_*.js
@@ -20,3 +20,6 @@ Thumbs.db
 Desktop.ini
 .env
 .env.*
+
+# Build output (created by Netlify)
+dist/
