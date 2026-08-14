@@ -26,19 +26,6 @@ const success = document.getElementById("form-success");
 if (form) {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const data = new FormData(form);
-    const name = String(data.get("name") || "").trim();
-    const email = String(data.get("email") || "").trim();
-    const interest = String(data.get("interest") || "").trim();
-    const message = String(data.get("message") || "").trim();
-
-    const subject = encodeURIComponent(`Select Edge inquiry — ${interest || "General"}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\n${message}`
-    );
-
-    window.location.href = `mailto:brad@selectedge.com?subject=${subject}&body=${body}`;
-
     if (success) {
       success.classList.add("show");
     }
